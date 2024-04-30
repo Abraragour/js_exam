@@ -1,0 +1,129 @@
+body{
+  overflow: hidden;
+  background-color: #0D0D0D;
+  color: white;
+}
+
+#sidebar{
+  display: flex;
+  position: fixed;
+  top:0;
+  bottom: 0;
+  left:-297px;
+  background-color: white;
+  z-index:9999999;
+}
+.logo{
+  width: 50px;
+  align-self: flex-start;
+  transform: translateY(30px);
+  -webkit-transform: translateY(30px);
+  -moz-transform: translateY(30px);
+  -ms-transform: translateY(30px);
+  -o-transform: translateY(30px);
+}
+#sidebar .sidebar_inner{
+  background-color:black;
+  padding: 20px;
+}
+
+#loading{
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top:0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999999999999;
+  background-color: black;
+}
+.spinner {
+  margin: 100px auto;
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  font-size: 10px;
+}
+
+.spinner > div {
+  background-color:white;
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+  
+  -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+  animation: sk-stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+.spinner .rect4 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+
+.spinner .rect5 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+
+@-webkit-keyframes sk-stretchdelay {
+  0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+  20% { -webkit-transform: scaleY(1.0) }
+}
+
+@keyframes sk-stretchdelay {
+  0%, 40%, 100% { 
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }  20% { 
+    transform: scaleY(1.0);
+    -webkit-transform: scaleY(1.0);
+  }
+}
+
+
+.meal-layer {
+  top:100%;
+  width: 100%;
+  height: 100%;
+  background-color: #f9f6f6dc;
+  transition:.5s;
+  -webkit-transition:.5s;
+  -moz-transition:.5s;
+  -ms-transition:.5s;
+  -o-transition:.5s;
+  color:black;
+}
+.meal:hover .meal-layer{
+top: 0;
+} 
+.serch .form-control::placeholder {
+  color:whitesmoke;
+}
+.cursor-pointer{
+  cursor: pointer;
+}
+
+.fa-xmark{
+z-index:999;
+}
+.inner-loadingScrean{
+  position: absolute;
+  background-color: #0D0D0D;
+
+  z-index: 99999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
